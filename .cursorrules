@@ -20,6 +20,8 @@
 - [`docs/DevOps/Backend/PYTHON_FASTAPI_RULES.md`](../docs/DevOps/Backend/PYTHON_FASTAPI_RULES.md)  
   - Controller → Service → Repository  
   - Pydantic Schema, async Repository, 앱 모듈 구조
+- [`docs/DevOps/Backend/ENTITY_RULE.md`](../docs/DevOps/Backend/ENTITY_RULE.md)  
+  - 모든 테이블 PK: `int` 자동 증감, 컬럼명 `id`
 
 ### 3단계 — 도메인 문서 (해당 작업 시)
 
@@ -39,6 +41,7 @@
 ```
 @docs/README.md
 @docs/DevOps/Backend/PYTHON_FASTAPI_RULES.md
+@docs/DevOps/Backend/ENTITY_RULE.md
 ```
 
 ---
