@@ -18,16 +18,17 @@
 | 조회 DB | `backend/apps/titanic/adapter/outbound/pg/walter_pg_reader.py` |
 | DTO | `backend/apps/titanic/app/dtos/james_dto.py`, `walter_dto.py` |
 
-## Friday13th 인증 — login / signup 분리 (jason 경로 사용 금지)
+## Viewer 인증 — login / signup (`friday13th`는 수업용, 인증은 viewer)
 
 | 역할 | 경로 |
 |------|------|
-| 로그인 API | `POST /friday13th/login/login` → `login_router.py` (로그인만) |
-| 로그인 흐름 | `login_router` → `LoginInteractor` → `login_repository` → `login_pg_repository` |
-| 로그인 입력 포트 (ABC) | `backend/apps/friday13th/app/ports/input/login_use_case.py` |
-| 로그인 출력 포트 (ABC) | `backend/apps/friday13th/app/ports/output/login_repository.py` |
-| 회원가입 API | `POST /friday13th/signup/signup` → `signup_router.py` |
-| 회원가입 흐름 | `signup_router` → `SignupInteractor` → `signup_repository` → `signup_pg_repository` |
+| 로그인 API | `POST /viewer/login/login` → `login_router.py` |
+| 로그인 흐름 | `login_router` → `LoginInteractor` → `login_pg_repository` |
+| 로그인 입력 포트 (ABC) | `backend/apps/viewer/app/ports/input/login_use_case.py` |
+| 로그인 출력 포트 (ABC) | `backend/apps/viewer/app/ports/output/login_repository.py` |
+| 회원가입 API | `POST /viewer/signup/signup` → `signup_router.py` |
+| 회원가입 흐름 | `signup_router` → `SignupInteractor` → `signup_pg_repository` |
+| 계정 ORM | `backend/apps/viewer/app/dtos/` — `groups`, `admins`, `users` |
 
 ### 존재하지 않음 (참조하지 말 것)
 
@@ -35,4 +36,4 @@
 - `backend/apps/titanic/app/walter_reader.py` (삭제됨)
 - `backend/apps/titanic/app/use_cases/james_command.py` (삭제됨 — `james_interactor.py` 사용)
 - `services/com.ragwatson.agora/...` (이 repo 아님)
-- `docs/DevOps/Backend/mova-erd.mmd` (삭제됨 — Mermaid는 `MOVA_ERD.md` 내부 블록)
+- `docs/DevOps/Backend/MOVA_ERD.md` — Mova ERD **단일 문서** (mermaid 블록 + `mova-erd.png` 미리보기). PNG: `python docs/DevOps/Backend/export_mova_erd_png.py`
