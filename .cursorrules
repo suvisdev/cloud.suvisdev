@@ -1,10 +1,10 @@
 # Top-Level Harness — Wiki + LLM PKS (English)
 
-> **PKS** = Prompt (`.cursorrules`, user task) + Knowledge (`docs/`, `CLAUDE.md`, `AGENTS.md`) + System (architecture-compliant code).
+> **PKS** = Prompt (`.cursorrules`, user task) + Knowledge (`vault/`, `CLAUDE.md`, `AGENTS.md`) + System (architecture-compliant code).
 
 ## Mandatory workflow (before any `suvisdev/` change)
 
-1. Read **Knowledge**: `.cursorrules` → `CLAUDE.md` → relevant `docs/` wiki pages → `AGENTS.md` when touching app paths.
+1. Read **Knowledge**: `.cursorrules` → `CLAUDE.md` → relevant `vault/` wiki pages → `AGENTS.md` when touching app paths.
 2. Do **not** guess conventions; Wiki overrides model priors.
 3. Apply **Karpathy harness**: state assumptions, minimal diff, verifiable success criteria.
 4. **PKS loop**: Prompt → Knowledge → System implementation.
@@ -34,7 +34,7 @@ Use this **canonical agent notation** in rules, docs, and examples (filesystem m
 | Layer | Convention | Example |
 |-------|------------|---------|
 | App modules | `suvisdev.<app>.<layer>...` — **omit `apps`** | `suvisdev.mova.app.use_cases.movies_interactor` |
-| Core / infra | `suvisdev.core.<module>...` | `suvisdev.core.matrix.oracle_database` |
+| Core / infra | `suvisdev.core.<module>...` | `suvisdev.core.matrix.grid_oracle_database_manager` |
 
 Rules:
 
@@ -45,7 +45,7 @@ Rules:
 ## Conflict priority
 
 1. User's most specific **recent** instruction  
-2. `docs/` wiki rules for the affected area  
+2. `vault/` wiki rules for the affected area  
 3. `CLAUDE.md` backend handoff section  
 4. This English top-level block  
 5. Korean harness summary below  
@@ -67,31 +67,30 @@ Karpathy principles (no implicit assumptions, minimal diff) **always** apply.
 
 ---
 
-## 필수: `docs/` 코딩 규칙 (코드 작성 전)
+## 필수: `vault/` 코딩 규칙 (코드 작성 전)
 
 **`suvisdev/` 아래 Python·FastAPI 코드를 작성·수정하기 전에**, 반드시 아래 순서로 문서를 읽고 규칙을 인지한다.  
 문서 없이 관례를 추측하여 구현하지 않는다.
 
 ### 1단계 — 인덱스
 
-- [`docs/README.md`](docs/README.md)  
+- [`vault/README.md`](vault/README.md)  
   - 영역별 규칙 경로·읽는 순서 확인
 
 ### 2단계 — 백엔드 규칙 (전문 읽기)
 
-- [`docs/DevOps/Backend/PYTHON_FASTAPI_RULES.md`](docs/DevOps/Backend/PYTHON_FASTAPI_RULES.md)  
-  - Controller → Service → Repository  
-  - Pydantic Schema, async Repository, 앱 모듈 구조
-- [`docs/DevOps/Backend/ENTITY_RULE.md`](docs/DevOps/Backend/ENTITY_RULE.md)  
+- [`CLAUDE.md`](CLAUDE.md) §B–I  
+  - Hexagonal · Clean · 레이어 · SOLID · 요청 흐름
+- [`vault/DevOps/Backend/ENTITY_RULE.md`](vault/DevOps/Backend/ENTITY_RULE.md)  
   - 모든 테이블 PK: `int` 자동 증감, 컬럼명 `id`
 
 ### 3단계 — 도메인 문서 (해당 작업 시)
 
 | 작업 영역 | 추가로 읽을 문서 |
 |-----------|------------------|
-| `suvisdev/apps/titanic/` | [`docs/타이타닉 개발/james_fastapi_context.md`](docs/타이타닉%20개발/james_fastapi_context.md) |
-| `suvisdev/apps/mova/` | `suvisdev/apps/mova/` 기존 패턴 + PYTHON_FASTAPI_RULES + `CLAUDE.md` |
-| `suvisdev/apps/viewer/` | `suvisdev/apps/viewer/` 기존 패턴 + PYTHON_FASTAPI_RULES |
+| `suvisdev/apps/titanic/` | [`vault/타이타닉 개발/james_fastapi_context.md`](vault/타이타닉%20개발/james_fastapi_context.md) |
+| `suvisdev/apps/mova/` | `suvisdev/apps/mova/` 기존 패턴 + `CLAUDE.md` + [`vault/DevOps/Backend/MOVA_ERD.md`](vault/DevOps/Backend/MOVA_ERD.md) |
+| `suvisdev/apps/viewer/` | `suvisdev/apps/viewer/` 기존 패턴 + `CLAUDE.md` |
 
 ### 4단계 — 구현
 
@@ -102,10 +101,10 @@ Karpathy principles (no implicit assumptions, minimal diff) **always** apply.
 ### Cursor 참조 예
 
 ```
-@docs/README.md
-@docs/DevOps/Backend/PYTHON_FASTAPI_RULES.md
-@docs/DevOps/Backend/ENTITY_RULE.md
+@vault/README.md
 @CLAUDE.md
+@vault/DevOps/Backend/ENTITY_RULE.md
+@AGENTS.md
 ```
 
 ---
@@ -129,7 +128,7 @@ Karpathy principles (no implicit assumptions, minimal diff) **always** apply.
 
 1. 사용자의 **더 구체적·최근** 지시  
 2. **영문 최상위 블록** (PKS · SOLID · 아키텍처 · suvisdev 경로)  
-3. **`docs/`** 내 해당 영역 규칙 MD  
+3. **`vault/`** 내 해당 영역 규칙 MD  
 4. **`CLAUDE.md`** 백엔드 인수인계  
 5. 본 한국어 요약  
 
