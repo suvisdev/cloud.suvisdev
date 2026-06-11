@@ -20,7 +20,7 @@
 | Walter 출력 포트 | `app/ports/output/crew_walter_roaster_repository.py` |
 | Walter DB | `adapter/outbound/pg/crew_walter_roaster_pg_repository.py` |
 | DTO | `app/dtos/crew_james_director_dto.py`, `crew_walter_roaster_dto.py` |
-| DI | `dependencies/{schema_base}_provider.py` — 예: `crew_smith_captain_provider.py` → `get_crew_smith_captain_use_case` |
+| DI | `dependencies/{schema_base}_provider.py` — 예: `crew_smith_captain_provider.py` → `get_smith_captain` |
 
 ### Schema 파일명 = 레이어 접두·접미사 기준
 

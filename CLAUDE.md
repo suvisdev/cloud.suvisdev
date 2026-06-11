@@ -233,7 +233,7 @@ async def save_movie(
 ### E.2 DI (`dependencies/*_provider.py`)
 
 ```python
-def get_crew_james_director_use_case(db: AsyncSession = Depends(get_db)) -> JamesUseCase:
+def get_james_director(db: AsyncSession = Depends(get_db)) -> JamesUseCase:
     repository: JamesRepository = CrewJamesDirectorPgRepository(session=db)
     return CrewJamesDirectorInteractor(repository=repository)
 ```
