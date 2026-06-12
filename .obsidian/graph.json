@@ -1,12 +1,48 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": false,
-  "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:suvisdev",
+      "color": {
+        "a": 1,
+        "rgb": 65531
+      }
+    },
+    {
+      "query": "path:suvis",
+      "color": {
+        "a": 1,
+        "rgb": 16664648
+      }
+    },
+    {
+      "query": "path:vault",
+      "color": {
+        "a": 1,
+        "rgb": 10265519
+      }
+    },
+    {
+      "query": "file:CLAUDE",
+      "color": {
+        "a": 1,
+        "rgb": 16498468
+      }
+    },
+    {
+      "query": "file:agent",
+      "color": {
+        "a": 1,
+        "rgb": 16498468
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +53,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.2588386562181609,
+  "scale": 0.7132754626224256,
   "close": true
 }
