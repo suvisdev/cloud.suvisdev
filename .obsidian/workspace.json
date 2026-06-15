@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a9ef26093876c640",
+        "id": "3933e307c769c1eb",
         "type": "tabs",
         "children": [
           {
-            "id": "04200c3f0f795ea4",
+            "id": "b39be53220ef67e3",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "icon": "lucide-file",
+              "title": "새 탭"
             }
           }
         ]
@@ -176,27 +176,28 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "04200c3f0f795ea4",
+  "active": "b39be53220ef67e3",
   "lastOpenFiles": [
-    "suvisdev/apps/titanic/adapter/inbound/api/v1/crew_smith_captain_router.py.tmp.21748.253c698671b6",
-    "suvisdev/apps/titanic/adapter/inbound/api/v1/crew_smith_captain_router.py.tmp.21748.7be4490332f6",
-    "suvis/app/titanic/smith-captain/page.tsx.tmp.21748.a6bc2d24b10c",
-    "suvis/app/titanic/smith-captain/page.tsx.tmp.21748.d7a1da8e9eca",
-    "suvisdev/apps/titanic/adapter/inbound/api/v1/crew_smith_captain_router.py.tmp.21748.6836c2ec6361",
-    "suvisdev/apps/titanic/adapter/inbound/api/v1/crew_smith_captain_router.py.tmp.21748.25dc811f9dad",
-    "suvisdev/apps/titanic/adapter/outbound/pg/crew_smith_captain_pg_repository.py.tmp.21748.604485537c85",
-    "suvisdev/apps/titanic/app/use_cases/crew_smith_captain_interactor.py.tmp.21748.190e454d0a88",
-    "suvisdev/apps/titanic/app/ports/input/crew_smith_captain_use_case.py.tmp.21748.86d2ffa9d2b4",
-    "suvisdev/apps/titanic/app/ports/input/crew_smith_captain_use_case.py.tmp.21748.50cc35ebdac0",
-    "suvisdev/apps/titanic/app/dtos/crew_smith_captain_dto.py.tmp.21748.c5138501ad1b",
-    "suvis/node_modules/@hookform/resolvers/README.md",
+    "suvisdev/apps/mova/app/use_cases/m",
+    "suvisdev/apps/titanic/app/use_cases/passenger_jack_trainer_interactor.py.tmp.5796.3b176a21e706",
+    "suvisdev/apps/titanic/adapter/inbound/api/schemas/crew_smith_captain_schema.py.tmp.5796.65b94aeefef8",
+    "suvisdev/apps/mova/dependencies/market_chat_provider.py.tmp.5796.5360445521da",
+    "suvisdev/apps/mova/dependencies/studio_import_provider.py.tmp.5796.a39316cbdc60",
+    "suvisdev/apps/mova/dependencies/studio_movies_provider.py.tmp.5796.5bafa506234f",
+    "suvisdev/apps/mova/adapter/outbound/pg/studio_search_pg_repository.py.tmp.5796.3c3757ef52c5",
+    "suvisdev/apps/mova/adapter/outbound/pg/platform_assistants_pg_repository.py.tmp.5796.6458fe80e378",
+    "suvisdev/apps/mova/adapter/outbound/pg/market_picks_pg_repository.py.tmp.5796.0d2fc65b038c",
+    "suvisdev/apps/mova/adapter/outbound/pg/market_reviews_pg_repository.py.tmp.5796.01fc9ccaba32",
+    "suvisdev/apps/mova/adapter/outbound/pg/market_chat_pg_repository.py.tmp.5796.6a5e986a30b5",
+    "suvisdev/apps/mova/_docs/mova-casting.md",
+    "CLAUDE.md",
     "suvis/node_modules/react-hook-form/README.md",
     "suvis/node_modules/@date-fns/tz/CHANGELOG.md",
+    "suvis/node_modules/@hookform/resolvers/README.md",
     "suvis/node_modules/cmdk/LICENSE.md",
     "suvis/node_modules/eventemitter3/README.md",
     "suvis/node_modules/@date-fns/tz/README.md",
     "vault/README.md",
-    "CLAUDE.md",
     "suvis/node_modules/recharts/CONTRIBUTING.md",
     "agent.md",
     "suvis/node_modules/@floating-ui/core/README.md",
@@ -213,7 +214,6 @@
     "vault/Backend/MOVA_ERD.md",
     "suvisdev/_claude/ENTITY_RULE.md",
     "suvis/_claude/CLAUDE.md",
-    "suvisdev/_claude/CLAUDE.md",
     ".venv/Lib/site-packages/sklearn/datasets/images/flower.jpg",
     ".venv/Lib/site-packages/sklearn/datasets/images/china.jpg",
     ".venv/Lib/site-packages/scipy/ndimage/tests/dots.png"
