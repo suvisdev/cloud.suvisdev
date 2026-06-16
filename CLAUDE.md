@@ -67,8 +67,7 @@ cloud.suvisdev/
 
 | 작업 영역 | CLAUDE.md |
 |-----------|-----------|
-| 백엔드 (FastAPI · Clean Architecture) | [`suvisdev/_claude/CLAUDE.md`](suvisdev/_claude/CLAUDE.md) |
-| 프론트엔드 (Next.js) | [`suvis/_claude/CLAUDE.md`](suvis/_claude/CLAUDE.md) |
-| Titanic 앱 (헥사고날 기준선) | [`suvisdev/apps/titanic/_docs/CLAUDE.md`](suvisdev/apps/titanic/_docs/CLAUDE.md) |
+| 백엔드 (FastAPI · Clean Architecture) | [`suvisdev/CLAUDE.md`](suvisdev/CLAUDE.md) |
+| 프론트엔드 (Next.js) | [`suvis/CLAUDE.md`](suvis/CLAUDE.md) |
 
 **Karpathy 네 원칙은 모든 영역에서 항상 유효하다.**
