@@ -11,10 +11,10 @@
             "id": "a5afa9e51a53ba29",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           }
         ]
@@ -178,17 +178,17 @@
   },
   "active": "a5afa9e51a53ba29",
   "lastOpenFiles": [
-    "suvisdev/apps/mova/app/use_cases/__pycache__/market_picks_interactor.cpython-314.pyc",
-    "suvisdev/apps/mova/app/ports/output/__pycache__/market_picks_repository.cpython-314.pyc",
-    "suvisdev/apps/mova/adapter/outbound/pg/__pycache__/market_picks_pg_repository.cpython-314.pyc",
-    "suvisdev/apps/mova/dependencies/__pycache__/market_picks_provider.cpython-314.pyc",
-    "suvisdev/apps/mova/app/dtos/__pycache__/market_picks_dto.cpython-314.pyc",
-    "suvisdev/apps/mova/app/ports/input/__pycache__/market_picks_use_case.cpython-314.pyc",
-    "suvisdev/apps/mova/adapter/inbound/api/schemas/__pycache__/market_picks_schema.cpython-314.pyc",
-    "suvisdev/apps/mova/adapter/inbound/api/v1/__pycache__/market_picks_router.cpython-314.pyc",
-    "suvisdev/apps/mova/dependencies/market_reviews_provider.py.tmp.23976.46b86a1b417a",
-    "suvisdev/apps/mova/adapter/inbound/api/v1/market_reviews_router.py.tmp.23976.fbdfd577f179",
-    "suvisdev/apps/mova/app/use_cases/market_reviews_interactor.py.tmp.23976.53a928566290",
+    "suvis/lib/mova-movies.ts.tmp.23976.9e17e8d97d42",
+    "suvis/lib/mova-api.ts.tmp.23976.98194bb2f8ee",
+    "suvis/app/mova/title/[id]/page.tsx.tmp.23976.c3940a9b63c5",
+    "suvis/app/mova/title/[id]/page.tsx.tmp.23976.61fe5e8b9264",
+    "suvis/app/mova/title/[id]/page.tsx.tmp.23976.6cfa2061c588",
+    "suvis/app/api/mova/titles/[id]/route.ts.tmp.23976.5f50eb12ab46",
+    "suvis/lib/mova-api.ts.tmp.23976.ac7f831ecfe0",
+    "suvisdev/apps/titanic/adapter/inbound/api/v1/passenger_cal_tester_router.py.tmp.23976.27194f29d652",
+    "suvisdev/apps/titanic/adapter/inbound/api/v1/passenger_cal_tester_router.py.tmp.23976.96d422e76b3f",
+    "suvisdev/apps/titanic/app/use_cases/passenger_jack_trainer_interactor.py.tmp.23976.8ea0b1caccf1",
+    "suvisdev/apps/titanic/app/ports/input/passenger_jack_trainer_use_case.py.tmp.23976.990ebc8a6857",
     "vault/suvis/react-rules.md",
     "suvisdev/apps/mova/_docs/mova-casting.md",
     "suvisdev/apps/viewer/_docs/CLAUDE.md",
